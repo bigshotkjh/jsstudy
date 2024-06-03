@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 한줄 주석.
+    /*
+    여러줄 주석.
+    */
+  </script>
+
+  <script>
+    /*자바스크립트 출력 방식
+      1. 콘솔
+        console.log(출력)
+      2. 화면
+        document.write(출력)
+      3. 경고창
+        alert(출력)
+    */
+    console.log('helle world');
+  </script>
+
+  <script>
+
+    /*
+    자바크트립트 타입의 특징
+
+    1. 동적 타입니다.(dynamic type) - 변수가 어떤 특정 타입과 연결되어 있지 않다. 언제든 타입을 바꿀 수 있다.
+        (ex 자바와 다르게 int에서 String으로 바꿀 수 있어.)
+    2. 약 타입(weak type) - 일치지 않는 타입이 포함된 경우 묵시적으로 스스로 타입 변환을 한다.
+        (개발자가 시키지 않아도 지가 알아서 변환.)
+      
+    자바스크립트의 주요 타입
+
+    1. 넘버(Number)타입 : 정수 / 실수 구분이 없다. NaN(Not a Number), Infinity(무한대값).
+    2. String 타입 : 문자 / 문자열 구분 없다.  "" 과 '' 모두 사용 가능.
+    3. Boolean 타입 : true 또는 false.
+    4. Null 타입 : 변수에 null 값을 저장한 경우 (의도적으로 값을 비운 경우).
+    5. Undefined 타입 : 변수에 값이 저장된 적이 없는 경우
+        ( null타입은 null을 저장한 것으로 이것과 달라. Undefined타입은 Undefined값이 저장되어있다.) 
+    */
+
+    /*
+    변수 선언
+
+    1. 모든 타입의 선언 키워드가 동일하다.
+    2. 형식 
+     var 변수명;
+    3. 타입이 다른 값을 재할당 할 수 있다.
+    4. 초기화를 생략할 수 있다. (즉 Undefined 타입의 Undefined값을 가진다.)
+    5. 값은 이름의 변수를 재선언 할 수 있다.
+    */
+   var a;
+   console.log(a); //Undefined
+   console.log(typeof a); //Undefined
+
+   a = 10; //재할당
+   
+   console.log(a, typeof a); //콤마(,)로 구분한 데이터는 공백으로 구분해서 출력
+                              //  10, number
+   a = 'hello'; // 또 재할당
+   
+   console.log(a, typeof a); // hello, string              
+  </script>
+</body>
+</html>
